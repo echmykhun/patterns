@@ -73,3 +73,6 @@ console.log(3, winderwaffeBluePrint);
 console.log(4, stolenCopy);
 console.log(5, stolenCopy.clone(), winderwaffeBluePrint);
 console.log('==============================');
+console.log('===============MVC============');
+var action = new userAction();
+action.get('index').render();
