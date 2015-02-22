@@ -61,3 +61,15 @@ commonHandler.handleException(commonExc);
 commonHandler.handleException(zeroExc);
 commonHandler.handleException(nullExc);
 console.log('==============================');
+
+console.log('===========Prototype==========');
+var winderwaffeBluePrint = new BluePrint('super-puper-duper secret Wunderwaffe');
+var stolenCopy = winderwaffeBluePrint.clone();
+
+console.log(1, winderwaffeBluePrint);
+console.log(2, stolenCopy);
+stolenCopy.name = 'nothing suspicious here!';
+console.log(3, winderwaffeBluePrint);
+console.log(4, stolenCopy);
+console.log(5, stolenCopy.clone(), winderwaffeBluePrint);
+console.log('==============================');
