@@ -75,4 +75,5 @@ console.log(5, stolenCopy.clone(), winderwaffeBluePrint);
 console.log('==============================');
 console.log('===============MVC============');
 var action = new userAction();
-action.get('index').render();
+action.get('index');
+action.get('details');
